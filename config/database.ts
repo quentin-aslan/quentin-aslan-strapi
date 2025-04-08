@@ -44,7 +44,7 @@ export default ({ env }) => {
     },
     sqlite: {
       connection: {
-        filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+        filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')), // updated via .env to ./database_sqlite/data.db
       },
       useNullAsDefault: true,
     },
