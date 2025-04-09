@@ -107,6 +107,11 @@
           "localized": true
         }
       }
+    },
+    "ressource_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ressource-link.ressource-link"
     }
   }
 }

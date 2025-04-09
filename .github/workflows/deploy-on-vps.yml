@@ -15,6 +15,7 @@ jobs:
           port: 22
           script: |
             cd ~/dev/quentin-aslan-strapi
+            git checkout .
             git pull origin main
             npm ci
             NODE_ENV=production npm run build
