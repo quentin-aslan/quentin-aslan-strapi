@@ -405,6 +405,13 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
         };
       }>;
     endDate: Schema.Attribute.Date;
+    enterprise: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    enterpriseLogo: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
