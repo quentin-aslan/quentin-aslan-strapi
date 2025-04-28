@@ -56,15 +56,6 @@
         "videos"
       ]
     },
-    "slug": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
     "content": {
       "type": "richtext",
       "required": true,
@@ -112,6 +103,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ressource-link.ressource-link"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
